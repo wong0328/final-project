@@ -46,20 +46,123 @@ table {
 	border-spacing: 0;
 }
 /*GENERIC STYLES */
+/*DO NOT TOUCH BEFORE THIS LINE*/
+
+
+
+
+
+ul{
+    grid:display;
+    grid-column: 1fr, 1fr;
+    grid-template-columns:repeat(2, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    font-size: 40px;
+}
+
+.logo{
+    background-color: #c78b07;
+    padding-bottom: 57px;
+}
+
+input{
+    width: 100%;
+    padding: 20px;
+}
+
+
+
+
+.navbar{
+    background: #222222;
+    text-align: center;
+    padding:1cm;
+}
+
+.navbar ul li {
+    padding: 30px 0px;
+    padding-top: 0px;
+    padding-bottom: 50px;
+}
+
+.navbar ul li a{
+    color: #c78b07;
+    text-decoration: none;
+}
+
+
+.buttonone button{
+    padding: 20px 36px;
+    background: #c78b07;
+    color: #222222;
+    /* height: 15px;
+    width: 5cm; */
+    border: none;
+    margin-top: 20px;
+}
+
+.fa-solid{
+    color:#c78b07;
+    border:#c78b07;
+    border: 1px solid;
+    padding:5px;
+    font-size: 48px;
+
+}
+
+.searchbar input{
+    width: calc(100% - 50px);
+}
+
+.searchbar{
+    display: flex;
+    align-items: center;
+    
+}
+
+.header{
+    position: 10px;
+    background-color: rgba(0, 0, 0, 0.5); 
+    /* opacity: 40%; */
+    padding:20px;
+  }
+
+  .header{
+    color: white; opacity: 100%;
+  }
+
+.banner img {
+    position: relative;
+  }
+
+
 
 body{
 background-color: white;
 font-family: 'Open Sans', sans-serif;
 font-size: 14px;
 line-height: 1.5;
-color:black;
+color:#222222;
 }
 
-nav {
-    text-align: center;
-    /* width: 100%; */
-    margin: 0 auto;
-	position: relative;
+
+.logo img{
+    width: 100px;
+}
+
+.logo{
+    background-color: c78b07;
+}
+
+
+.backgroundimage{
+  background: url(../images/main-banner.jpg) center;
+  padding: 100px 0;
+  /* height: 400px; */
+}
+
+img{
+    width: calc(100% - 50px)
 }
 
 header{
@@ -73,35 +176,314 @@ h1{
     margin-bottom: 34px;
 }
 
+
+.aboutus{
+    background-color: #ffe6ac;
+    padding: 10px;
+}
+
+
 h2{
-    font-size: 71px;
+    font-size: 35px;
     font-weight: bold;
     line-height: 1.5px;
-    margin-bottom: 34px;
+    /* margin-bottom: 34px; */
+}
+
+.aboutus img{
+    padding-bottom: 1cm;
+}
+
+.headingtwo{
+    padding-bottom: 1cm;
+}
+
+/* command + / is command out */
+
+.ourservices{
+    padding-top: 1cm;
+    margin-left: 10px;
+
+}
+
+.digital img{
+    padding-top: 1cm;
+    margin-left: 10px;
 }
 
 h3{
-    font-size: 71px;
+    font-size: 35px;
     font-weight: bold;
     line-height: 106px;
-    margin-bottom: 34px;
+}
+
+.digitaltitle{
+    margin-left:10px;
+}
+
+.digitalwhole{
+    background-color: #ffe6ac;
+    margin-left:10px;
+    margin-right: 40px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.digitalp{
+    margin-left: 10px;
+}
+
+.digitalbutton button{
+    padding: 30px 46px;
+    background: #222222;
+    color: #ffffff;
+    margin-top: 20px;
+    width: 230px;
+    margin-left: 10px;
+    border: none;
+    font-size: 20px;
+}
+
+.marketingpic img{
+margin-left: 10px;
+margin-top: 10px;
+}
+
+.marketgroup{
+    background-color:#ffe6ac;
+    margin-left:10px;
+    margin-right: 40px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.markettitle{
+    padding-left: 10px;
+}
+
+.marketb button{
+    padding: 30px 46px;
+    background: #222222;
+    color: #ffffff;
+    margin-top: 20px;
+    width: 260px;
+    font-size:20px;
+    border:none;
+}
+
+.videopic img{
+    padding-left: 10px;
+    margin-top: 10px;
+}
+
+    
+    .videgroup{
+        background-color:#ffe6ac;
+        margin-left:10px;
+        margin-right: 40px;
+        padding-top: 5px;
+        padding-bottom: 10px;
+    }
+    
+    .videotitle{
+        padding-left: 10px;
+    }
+    
+    .videobutton button{
+        padding: 30px 46px;
+        background: #222222;
+        color: #ffffff;
+        margin-top: 20px;
+        width: 230px;
+        font-size:20px;
+        border:none;
+    }
+
+    .webpic img{
+        padding-left: 10px;
+        margin-top: 10px;
+    }
+
+    .webgroup {
+        background-color:#ffe6ac;
+        margin-left:10px;
+        margin-right: 40px;
+        padding-top: 5px;
+        padding-bottom: 10px;
+    }
+    
+    .webtitle {
+        padding-left: 10px;
+    }
+
+    .webp{
+        margin-left: 10px;
+    }
+    
+    .webbutton button{
+        padding: 30px 46px;
+        background: #222222;
+        color: #ffffff;
+        margin-top: 20px;
+        width: 217px;
+        font-size:20px;
+        border:none;
+        margin-left: 10px;
+    }
+
+    .printpic img{
+        padding-left: 10px;
+        margin-top: 10px;
+    }
+
+    .printgroup {
+        background-color:#ffe6ac;
+        margin-left:10px;
+        margin-right: 40px;
+        padding-top: 5px;
+        padding-bottom: 10px;
+    }
+    
+    .printtitle {
+        padding-left: 10px;
+    }
+
+    .printp{
+        margin-left: 10px;
+    }
+    
+    .printbutton button{
+        padding: 30px 46px;
+        background: #222222;
+        color: #ffffff;
+        margin-top: 20px;
+        width: 217px;
+        font-size:20px;
+        border:none;
+        margin-left: 10px;
+    }
+
+
+    .visionpic{
+        background: url(../images/vision.jpg) center;
+        padding: 100px 0;
+        /* height: 400px; */
+      }
+
+      .visiontitle{
+        color:#ffffff;
+        padding-left: 20px;
+
+      }
+
+   
+    
+    .visionbutton{
+        padding: 30px 46px;
+        background: #222222;
+        color: #ffffff;
+        margin-top: 20px;
+        width: 220px;
+        font-size:20px;
+        border:none;
+    }
+
+    .johnwhole{
+        background-color:#ffe6ac;
+        margin-left:10px;
+        margin-right: 40px;
+        padding-top: 5px;
+        padding-bottom: 10px;
+    }
+
+    .johndoe{
+        padding-left: 10px;
+    }
+
+    .ceo{
+        margin-left: 10px;
+    }
+
+    .ourteamtitle{
+        padding-top: 40px;
+        padding-bottom:40px;
+        padding-left: 10px;
+    }
+
+    .john img{
+        padding-left:10px;
+    }
+
+    .horizontal{
+        align:center;
+        width:97%;
+        color: #c78b07;
+
+    }
+    .ourteamp{
+        margin-left: 10px;
+    }
+    
+    .printbutton button{
+        padding: 30px 46px;
+        background: #222222;
+        color: #ffffff;
+        margin-top: 20px;
+        width: 217px;
+        font-size:20px;
+        border:none;
+        margin-left: 10px;
+    }
+
+    .bobwhole{
+        background-color:#ffe6ac;
+        margin-left:10px;
+        margin-right: 40px;
+        padding-top: 5px;
+        padding-bottom: 10px;
+    }
+    
+    
+.contactustitle{
+    padding-top: 70px;
+    padding-bottom: 40px;
+}
+
+.contactus{
+    margin-left:10px;
+}
+
+.contactus input{
+    width: 90%;
+}
+
+.sendbutton button {
+    /* width:5%; */
+    padding: 10px 20px;
+    background-color:#222222 ;
+    color: #c78b07;
+    border:none;
 }
 
 h4{
-    font-size: 71px;
+    font-size: 35px;
     font-weight: bold;
     line-height: 106px;
     margin-bottom: 34px;
 }
 
+
+
 h5{
-    font-size: 71px;
+    font-size: 35px;
     font-weight: bold;
     line-height: 106px;
     margin-bottom: 34px;
 }
 
 p{
-    margin: bottom 1em; /*font size 14px 1em=14px*/
+    margin: bottom 1em; 
+    /* font size 14px 1em=14px */
 
 }
+

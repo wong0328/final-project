@@ -53,9 +53,9 @@ table {
 
 
 ul{
-    grid:display;
-    grid-column: 1fr, 1fr;
-    grid-template-columns:repeat(2, 1fr);
+    display:grid;
+    /*grid-column: 1fr 1fr*/
+    grid-template-columns:repeat(1, 1fr);
     grid-template-rows: repeat(7, 1fr);
     font-size: 40px;
 }
@@ -121,7 +121,7 @@ input{
 }
 
 .header{
-    position: 10px;
+    /*position: 10px;*/
     background-color: rgba(0, 0, 0, 0.5); 
     /* opacity: 40%; */
     padding:20px;
@@ -151,7 +151,7 @@ color:#222222;
 }
 
 .logo{
-    background-color: c78b07;
+    background-color: #c78b07;
 }
 
 
@@ -378,7 +378,7 @@ margin-top: 10px;
 
    
     
-    .visionbutton{
+    .visionbutton {
         padding: 30px 46px;
         background: #222222;
         color: #ffffff;
@@ -415,7 +415,7 @@ margin-top: 10px;
     }
 
     .horizontal{
-        align:center;
+        /*align:center;*/
         width:97%;
         color: #c78b07;
 
@@ -442,6 +442,10 @@ margin-top: 10px;
         padding-top: 5px;
         padding-bottom: 10px;
     }
+
+    .bob{
+        margin-left: 10px;
+    }
     
     
 .contactustitle{
@@ -465,6 +469,26 @@ margin-top: 10px;
     border:none;
 }
 
+table{
+    border-collapse: collapse;
+  width: 90%;
+  text-align: center;
+  margin: 10px;
+
+
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+    border: 1px black solid;
+}
+
+th{
+    background-color: #ffe6ac;
+    border: 1px black solid;
+}
+
 h4{
     font-size: 35px;
     font-weight: bold;
@@ -472,7 +496,28 @@ h4{
     margin-bottom: 34px;
 }
 
+.hours{
+    margin-left: 10px;
 
+}
+
+tr{
+    border: 1px black solid;
+    padding: 20px 30px;
+}
+
+thead th{
+    text-align: center;
+}
+
+iframe{
+    margin-left: 10px;
+}
+
+.location{
+    margin-left: 10px;
+
+}
 
 h5{
     font-size: 35px;
@@ -482,8 +527,106 @@ h5{
 }
 
 p{
-    margin: bottom 1em; 
+    margin-bottom: 1em; 
     /* font size 14px 1em=14px */
 
 }
 
+footer{
+    background-color: #222222 ;
+    color: #c78b07;
+    padding-top: 10px;
+}
+
+.unsplash {
+    color: #c78b07;
+
+
+}
+
+
+
+
+
+@media screen and (min-width: 750px) and (max-width: 1200px){
+
+    
+    
+.logo{
+    background-color: #222222;
+}
+.horizon{
+    display: grid;
+    grid-template-columns:repeat(5, 1fr);
+    font-size: medium;
+    
+}
+
+
+.header{
+    /*position: 10px;*/
+    background-color: rgba(0, 0, 0, 0.5); 
+    /* opacity: 40%; */
+    padding:20px;
+    width:85%;
+    margin-left: 40px;
+  }
+
+  .header{
+    color: white; opacity: 100%;
+  }
+
+.banner img {
+    position:absolute;
+  }
+
+
+
+body{
+background-color: white;
+font-family: 'Open Sans', sans-serif;
+font-size: 14px;
+line-height: 1.5;
+color:#222222;
+}
+
+
+
+
+
+
+
+
+.backgroundimage{
+  background: url(../images/main-banner.jpg) center;
+  padding: 100px 0;
+  /* height: 400px; */
+}
+
+img{
+    width: calc(100% - 550px);
+    margin-left:40px;
+    display: flex;
+}
+
+.boutus{
+    background-color: #ffe6ac;
+    display: flex;
+    padding: 30px;
+}
+
+.onebigservice{
+    display: flex;
+    flex-wrap:wrap;justify-content:center;
+}
+
+.ourservices{
+    order:-6;
+    padding:30px;
+}
+
+.digl{
+    order:-5;
+}
+
+}

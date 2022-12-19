@@ -550,16 +550,34 @@ footer{
 
 @media screen and (min-width: 750px) and (max-width: 1200px){
 
-    
+    .topwhole{
+    display: grid;
+  }
+li{
+    margin-top: -170px;
+    margin-left:50px;
+}
+
     
 .logo{
     background-color: #222222;
+    
+
+
+
 }
 .horizon{
     display: grid;
     grid-template-columns:repeat(5, 1fr);
     font-size: medium;
     
+    
+}
+
+.searchbar{
+    width: 30%;
+   margin-top: -50px;
+   margin-left: 700px;
 }
 
 
@@ -617,16 +635,6 @@ img{
 
 .onebigservice{
     display: flex;
-    flex-wrap:wrap;justify-content:center;
+    flex-wrap: wrap;
 }
-
-.ourservices{
-    order:-6;
-    padding:30px;
-}
-
-.digl{
-    order:-5;
-}
-
 }
